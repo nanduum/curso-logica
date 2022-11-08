@@ -2,7 +2,7 @@ Algoritmo "terreno"
 
 Var
 
-   largura, comprimento, area, preco, precoMetroQuadrado : real
+   largura, comprimento, area, preco, metroQuadrado : real
 
 
 Inicio
@@ -14,11 +14,13 @@ Inicio
       leia(comprimento)
       
       escreval("Digite o valor do metro quadrado: ")
-      leia(precoMetroQuadrado)
+      leia(metroQuadrado)
 
       area <- largura * comprimento
-      preco <- area * precoMetroQuadrado
+      preco <- area * metroQuadrado
       
-      escreval("A área do terreno é de: ", area:8:2)
-      escreval("O preço do terreno é de: ",preco:8:2)
+      escreval("A Ã¡rea do terreno Ã© de: ", area:8:2)
+      escreval("O preÃ§o do terreno Ã© de: ",preco:8:2)
+      
+      
 Fimalgoritmo
