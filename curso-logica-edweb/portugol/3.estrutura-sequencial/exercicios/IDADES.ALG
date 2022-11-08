@@ -32,7 +32,7 @@ Inicio
     
     media <- (idade1 + idade2) / 2
     
-    escreval("A idade média de ", nome1, " e ", nome2, " é de: ", media)
+    escreval("A idade média de ", nome1, " e ", nome2, " é de: ", media," anos")
 
 
 Fimalgoritmo

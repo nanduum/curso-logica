@@ -16,8 +16,8 @@ Inicio
       escreval
       
        area <- base * altura
-       perimetro <- (2 * base) + (2 * altura)
-       diagonal <- RaizQ(base ^ 2 + altura ^ 2)
+       perimetro <- (2 * base) + (2 * altura) // 2 * (base + altura)
+       diagonal <- RaizQ(base ^ 2 + altura ^ 2) // RaizQ(exp(base, 2) + (altura, 2))
 
 
        escreval("AREA: ",area:6:4)
