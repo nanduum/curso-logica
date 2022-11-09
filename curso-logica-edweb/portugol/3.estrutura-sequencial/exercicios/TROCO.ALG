@@ -17,12 +17,12 @@ Inicio
     leia(valorRecebido)
     
     
-    troco <- (preco * quantidade) - (valorRecebido)
+    troco <- valorRecebido - (preco * quantidade)
     
     
     
     
-    escreva("TROCO = ", troco)
+    escreva("TROCO = ", troco:4:2)
 
 
 Fimalgoritmo

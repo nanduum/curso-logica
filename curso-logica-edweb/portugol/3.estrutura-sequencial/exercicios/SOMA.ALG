@@ -2,8 +2,7 @@ Algoritmo "soma"
 
 Var
 
-    x, y : inteiro
-    resultado : real
+    x, y, resultado : real
 
 Inicio
 
