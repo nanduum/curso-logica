@@ -2,26 +2,26 @@ Algoritmo "troco_verificado"
 
 Var
 
-   precoUnitario, dinheiro, troco, precoFinal : real
-   quantidade                    : inteiro
+   preco, dinheiro, troco, resto : real
+   quantidade : inteiro
 
 Inicio
 
    escreva("Digite o preço do produto: ")
-   leia(precoUnitario)
-   escreva("Digite a quantidade de produto comprada: ")
+   leia(preco)
+   escreva("Digite a quantidade do produto comprado: ")
    leia(quantidade)
-   
-   precoFinal <- precoUnitario * quantidade
-   
    escreva("Digite a quantidade de dinheiro recebido: ")
    leia(dinheiro)
    
    
-    se(precoFinal > dinheiro)entao
-      escreva("Dinheiro Insuficiente, faltam : ", precoFinal - dinheiro, " Reais" )
-      senao
-         escreva("troco: ",dinheiro - precoFinal, " Reais")
+    se dinheiro >= (preco * quantidade) entao
+       troco <- dinheiro - preco * quantidade
+       escreval("Troco: ", troco)
+    senao
+         resto <- preco * quantidade - dinheiro
+         escreval
+         escreval("Dinheiro Insuficiente, faltam: ", resto:4:2, " Reais")
    fimse
 
 Fimalgoritmo
