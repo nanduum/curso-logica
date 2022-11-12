@@ -2,7 +2,7 @@ Algoritmo "menor_de_tres"
 
 Var
 
-    primeiro, segundo, terceiro: inteiro
+    primeiro, segundo, terceiro, menor: inteiro
 
 
 Inicio
@@ -14,16 +14,16 @@ Inicio
      escreva("Digite o terceiro valor: ")
      leia(terceiro)
 
-     se(primeiro <= segundo)entao
-        escreva("Menor = ", primeiro)
+     se(primeiro < segundo) e (primeiro < terceiro)entao
+           menor <- primeiro
      senao
-        se(segundo <= primeiro)entao
-           escreva("Menor = ", segundo)
+        se(segundo < terceiro)entao
+                menor <- segundo
            senao
-              escreva("Menor = ", terceiro)
+                menor <- terceiro
          fimse
       fimse
 
-        escreval
+        escreval("menor: ",menor)
 
 Fimalgoritmo
