@@ -2,7 +2,7 @@ Algoritmo "dardo"
 
 Var
 
-    d1, d2, d3 : real
+    d1, d2, d3, maior : real
 
 
 Inicio
@@ -16,14 +16,14 @@ Inicio
 
 
     se(d1 > d2) e (d1 > d3) entao
-       escreva("Maior Distancia: " ,d1)
+          maior <- d1
        senao
-       se (d2 > d1) e (d2 > d3)entao
-          escreva("Maior Distancia: " ,d2)
+       se (d2 > d3)entao
+          maior <- d2
        senao
-          escreva("Maior Distancia: " ,d3)
+          maior <- d3)
        fimse
     fimse
-
+     escreval("Maior distancia: ", maior:4:2)
 
 Fimalgoritmo
