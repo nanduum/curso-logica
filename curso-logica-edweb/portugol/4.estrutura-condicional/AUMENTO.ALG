@@ -2,44 +2,32 @@ Algoritmo "aumento"
 
 Var
 
-   salario, novoSalario, aumento, porcentagem : real
-
+   salario, porcentagem, aumento, novoSalario, teste : real
 
 Inicio
 
-    escreva("Digite o salario da pessoa: ")
-    leia(salario)
-    
-    se salario <= 1000 entao
-    porcentagem <- 0.2
-    novoSalario <- salario * porcentagem
-    
-    senao
-        se (salario < 1000) ou (salario <= 3000) entao
-         porcentagem <- 0.15
-         aumento <- salario * porcentagem
-         novoSalario <- aumento + salario
-             escreval("Novo Salario = R$", novoSalario)
-             escreval("Aumento = R$", aumento)
-             escreval("Porcentagem = ", porcentagem * 100, " %")
-        senao
-          se (salario < 3000) ou (salario <= 8000)entao
-              porcentagem <- 0.10
-              aumento <- salario * porcentagem
-              novoSalario <- aumento + salario
-               escreval("Novo Salario = R$", novoSalario)
-               escreval("Aumento = R$", aumento)
-               escreval("Porcentagem = ", porcentagem * 100, " %")
-          senao
-              se salario < 8000 entao
-              porcentagem <- 0.05
-              aumento <- salario * porcentagem
-              novoSalario <- aumento + salario
-                escreval("Novo Salario = R$", novoSalario)
-                escreval("Aumento = R$", aumento)
-                escreval("Porcentagem = ", porcentagem * 100, " %")
-          fimse
-        fimse
-       fimse
+   escreva("Digite o salario da pessoa: ")
+   leia(salario)
+
+   se salario <= 1000.0 entao
+      porcentagem <- 20
+   senao
+      se salario <= 3000.0 entao
+         porcentagem <- 15
+      senao
+         se salario <= 8000.0 entao
+            porcentagem <- 10
+         senao
+            porcentagem <- 5
+         fimse
       fimse
+   fimse
+
+   aumento <- salario * porcentagem / 100
+   novoSalario <- salario + aumento
+
+   escreval("Novo salario = R$ ", novoSalario:8:2)
+   escreval("Aumento = R$ ", aumento:8:2)
+   escreval("Porcentagem = ", porcentagem, " %")
+
 Fimalgoritmo
